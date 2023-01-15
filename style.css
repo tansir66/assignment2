@@ -1,0 +1,385 @@
+
+/*.............. Header Style ...................  */
+.header-container{
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    height: 850px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side{
+    width: 302px;
+    height: 53px;
+    margin-left: 170px;
+    font-family: 'Work Sans';
+}
+.right-side a{
+    text-decoration: none;
+    color: black;
+
+}
+.right-side a:hover{
+    background-color: aqua;
+    transition: .8s;
+    cursor: pointer;
+
+}
+
+.right-side{
+    width: 477px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand-new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand-new p{
+    text-align: center;
+}
+.header-content-title{
+    font-family: 'Work Sans';
+    text-align: center;
+}
+.btn-explore{
+    width: 160px;
+    height: 54px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: none;
+    color: aliceblue;
+}
+
+.header-img img{
+    width: 1000px;
+    height: 500px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+/* Button Hover */
+button:hover{
+    background: purple;
+    transition: .8s;
+    cursor: pointer
+
+}
+
+/*.................... Main part Style ................. */
+main{
+    margin-top: 85px;
+}
+/* .............First section Style................. */
+.first-sec-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.first-sec-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 160px;
+
+}
+/* .architect-img{
+    width: 300px;
+    height: 300px;
+} */
+.quick-list{
+    margin-right: 180px;
+    margin-left: 30px;
+}
+.quick-list p{
+    width: 380px;
+    height: 70px;
+}
+.quick-list-flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.quick-list-flex .btn-explore{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+/* Second Section Style */
+
+.second-section{
+    margin-top: 130px;
+    margin-bottom: 150px;
+    margin-left: 180px;
+    width: 1000px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 54px;
+}
+.second-section-content{
+    width: 400px;
+    height: 650px;
+}
+.s-sec-con-title{
+    border-left: 2px solid #FF900E;;
+    
+}
+.s-sec-con-title h3{
+    padding-left: 10px;
+}
+.second-sec-des{
+    width: 390px;
+    height: 130px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+.second-section-img img{
+    width: 400px;
+    height: 680px;
+}.second-section-img button{
+     width: 200px;
+     height: 120px;
+     font-size: 30px;
+     margin-top: -150px;
+}
+/* hover */
+.s-icon:hover{
+    background: purple;
+   
+
+    /* transition: .8s; */
+    cursor: pointer;
+    
+
+
+   
+    
+}
+.t-sec-icons:hover{
+    transform: skew(-30deg);
+    transition: transform 1s;
+    background-color: aqua;
+    
+    cursor: pointer;
+}
+
+/*........................... 3rd Section Style .................... */
+.t-sec-des{
+    margin-left:180px ;
+}
+.t-sec-icons{
+    margin-top: 100px;
+    margin-left: 195px ;
+    margin-right: 195px;
+    display: flex;
+    justify-content: space-around;
+}
+.t-sec-icon{
+    width: 130px;
+    height: 130px;
+    border: 1px solid #FF900E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-gap: 10px ;
+    padding-bottom: 10px;
+}
+.t-sec-icon img{
+    margin-top: 10px;
+    width: 30px;
+    height: 28px;
+}
+/*....................... Hover ....................*/
+.t-sec-icon:hover{
+    background: purple;
+    transition: 2s;
+    rotate: 360;
+    cursor: pointer;
+}
+
+/* fourth Section Style sheet */
+
+.fourth-section{
+    margin-top: 100px;
+}
+
+.f-sec-des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors-icon{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.sponsors-icon img{
+    width: 130px;
+    height: 35px;
+}
+
+/* Footer  */
+footer{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 180px;
+    margin-right: 180px;
+    width: 1000px;
+    height: 30px;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
+footer p{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Media Query For Small device */
+
+@media only screen and (max-width: 576px){
+    /*.................. Header part............... */
+    .header-container{
+        width: 100%;
+        height: auto;
+    }
+    .nav-bar{
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-bar .right-side{
+        height: auto;
+        display: grid ;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .header-img img{
+        width: 300px;
+        height: auto;
+ 
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    /*.............................. First Section.................... */
+    main{
+        height: auto;
+        width: 100%;
+    }
+    .first-section{
+        width: 100%;
+        height: auto;
+    }
+    .first-sec-content{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .first-sec-img{
+        
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        margin-left: 30px
+    
+    }
+    .first-sec-img img{
+        width: 200;
+        height: auto;
+        
+    }
+    .quick-list{
+        width: 100%;
+        height: auto;
+    }
+    .quick-list-flex{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    /* Second section style sheet */
+    .second-section{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        width: 100%;
+        height: auto;
+        display : grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+       
+
+    }
+    .second-section-img{
+        width: 250px;
+        height: auto;
+    }
+
+    .second-section-content{
+       
+        gap: 10px;
+        height: auto;
+    }
+/* 3rd Section  */
+
+.third-section{
+    width: 100%;
+    height: auto;
+}
+.t-sec-icons{
+    flex-direction: column;
+}
+
+/* 4th section  */
+.fourth-section{
+    width: 100%;
+    height: auto;
+}
+.sponsors-icon{
+    width: min-content;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+footer{
+    margin-left: 10px;
+    text-align: center;
+    width: 300px;
+    height: auto;
+}
+}
+
